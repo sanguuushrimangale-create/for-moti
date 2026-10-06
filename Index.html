@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Moti Meri Jaan ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#05030a;
+    color:white;
+    font-family:Georgia,serif;
+    overflow-x:hidden;
+}
+
+/* Background glow */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:#ff176d;
+    opacity:.10;
+    filter:blur(100px);
+    top:-200px;
+    left:-200px;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:#6d35ff;
+    opacity:.10;
+    filter:blur(100px);
+    right:-200px;
+    bottom:-200px;
+    z-index:-2;
+}
+
+/* Sections */
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+}
+
+.small{
+    color:#ff6b9b;
+    font-size:11px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:clamp(42px,11vw,80px);
+    font-weight:normal;
+    line-height:1.05;
+    text-shadow:
+        0 4px 0 #751638,
+        0 10px 30px #ff4f8866;
+}
+
+.pink{
+    color:#ff5c91;
+}
+
+.card{
+    margin-top:35px;
+    padding:30px 22px;
+    border-radius:25px;
+    border:1px solid #ffffff20;
+    background:rgba(255,255,255,.06);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5),
+        inset 0 1px rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+}
+
+.text{
+    color:#ddd;
+    font-size:18px;
+    line-height:2;
+}
+
+/* Buttons */
+
+button{
+    margin-top:25px;
+    padding:14px 26px;
+    border-radius:50px;
+    border:1px solid #ff5c91;
+    background:#ff5c9115;
+    color:white;
+    font-family:Georgia,serif;
+    font-size:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:active{
+    transform:scale(.94);
+}
+
+button:hover{
+    background:#ff5c91;
+    box-shadow:0 0 30px #ff5c9166;
+}
+
+/* Hidden messages */
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;
+    animation:appear 1s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Pickup line */
+
+.quote{
+    min-height:130px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#eee;
+    font-size:21px;
+    line-height:1.7;
+    font-style:italic;
+}
+
+/* Hearts */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    color:#ff5c91;
+    font-size:20px;
+    pointer-events:none;
+    animation:floatHeart 6s linear forwards;
+    z-index:5;
+    text-shadow:0 0 15px #ff5c91;
+}
+
+@keyframes floatHeart{
+    0%{
+        transform:translateY(0) scale(.5);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) scale(1.4);
+        opacity:0;
+    }
+}
+
+/* 3D card effect */
+
+.card{
+    transform:perspective(800px) rotateX(0deg);
+    transition:transform .25s;
+}
+
+/* Final */
+
+.final{
+    color:#bbb;
+    font-size:18px;
+    line-height:2;
+}
+
+.signature{
+    margin-top:35px;
+    color:#ff6b9b;
+}
+
+footer{
+    text-align:center;
+    color:#444;
+    padding:30px;
+    font-size:11px;
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- 1. INTRO -->
+
+<section id="home">
+
+<div class="container">
+
+<div class="small">
+A little surprise for you
+</div>
+
+<h1>
+Happy Birthday<br>
+<span class="pink">Prachi ❤️</span>
+</h1>
+
+<div class="card">
+
+<p class="text">
+
+My Prachi...
+
+<br><br>
+
+Or should I say...
+
+<br>
+
+<b class="pink">Moti Meri Jaan? 🥹❤️</b>
+
+<br><br>
+
+I could have sent you a simple birthday message,
+but you're not a simple person to me.
+
+</p>
+
+<button onclick="openBirthday()">
+Open Your Surprise 💌
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- 2. BIRTHDAY -->
+
+<section id="birthday">
+
+<div class="container">
+
+<div class="small">
+Today is your day
+</div>
+
+<h1>
+Happy Birthday<br>
+<span class="pink">Moti Meri Jaan ❤️</span>
+</h1>
+
+<div class="card">
+
+<p class="text">
+
+Moti Meri Jaan,
+
+<br><br>
+
+I hope this year gives you
+everything your heart quietly wishes for.
+
+<br><br>
+
+More smiles.
+More peace.
+More beautiful memories.
+
+<br><br>
+
+And selfishly...
+
+I hope I get to be a small part
+of those beautiful moments.
+
+</p>
+
+</div>
+
+<button onclick="openHeart()">
+There's more ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- 3. HEART -->
+
+<section id="heart">
+
+<div class="container">
+
+<div class="small">
+Something from my heart
+</div>
+
+<div class="card">
+
+<p class="text">
+
+Hey Cutiee... 🥹❤️
+
+<br><br>
+
+I don't remember the exact moment
+when you became so important to me.
+
+Maybe it was our conversations.
+
+Maybe it was the little things.
+
+Maybe it happened so quietly
+that I never noticed.
+
+<br><br>
+
+But somewhere between
+all those random moments,
+you became someone
+I never want to imagine my days without.
+
+</p>
+
+</div>
+
+<button onclick="openSecret()">
+One secret for you 🤫
+</button>
+
+</div>
+
+</section>
+
+
+<!-- 4. SECRET -->
+
+<section id="secret">
+
+<div class="container">
+
+<div class="small">
+Only for Moti
+</div>
+
+<div class="card">
+
+<h2 class="pink">
+A little secret ❤️
+</h2>
+
+<button onclick="showSecret()">
+Tap to unlock
+</button>
+
+<div id="secretMessage" class="hidden">
+
+<p class="text">
+
+<br>
+
+If I could give you one gift
+that money could never buy,
+
+I'd give you the ability
+to see yourself through my eyes
+for just one minute.
+
+<br><br>
+
+Then you'd understand
+why your smile matters to me,
+
+why your presence feels different,
+
+and why even your smallest message
+can change my entire mood.
+
+<br><br>
+
+You're not just someone
+I love talking to.
+
+<br>
+
+You're someone
+I look forward to talking to.
+
+<br><br>
+
+<b class="pink">
+That's what you mean to me,
+Moti Meri Jaan. ❤️
+</b>
+
+</p>
+
+</div>
+
+</div>
+
+<button onclick="openPickup()">
+Next 😉
+</button>
+
+</div>
+
+</section>
+
+
+<!-- 5. PICKUP LINES -->
+
+<section id="pickup">
+
+<div class="container">
+
+<div class="small">
+Okay Cutiee... 😭❤️
+</div>
+
+<div class="card">
+
+<div id="quote" class="quote">
+
+“Are you my birthday wish?
+
+Because somehow,
+everything I could ask for
+already looks a lot like you.” ❤️
+
+</div>
+
+<button onclick="nextQuote()">
+Another one 😉
+</button>
+
+<p style="margin-top:15px;color:#777;">
+<span id="quoteNumber">1</span> / 4
+</p>
+
+</div>
+
+<button onclick="openFinal()">
+One last thing ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- 6. FINAL -->
+
+<section id="final">
+
+<div class="container">
+
+<div class="small">
+Before you leave...
+</div>
+
+<h1>
+<span class="pink">Happy Birthday</span><br>
+Moti Meri Jaan ❤️
+</h1>
+
+<div class="card">
+
+<p class="final">
+
+I hope life gives you
+a thousand reasons to smile.
+
+<br><br>
+
+And whenever you forget
+how special you are...
+
+come back here.
+
+<br>
+
+I'll remind you.
+
+<br><br>
+
+More conversations.
+More laughter.
+More stupid jokes.
+More memories.
+
+<br><br>
+
+More moments where I get to call you...
+
+<br><br>
+
+<b class="pink">
+Moti Meri Jaan.
+</b>
+
+<br><br>
+
+I don't know what tomorrow holds.
+
+<br>
+
+But if you're somewhere in it...
+
+I already have one reason
+to look forward to it.
+
+</p>
+
+<div class="signature">
+Made especially for Prachi ❤️
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+For Prachi — My Moti Meri Jaan ❤️
+</footer>
+
+
+<script>
+
+/* Navigation */
+
+function goTo(id){
+
+    var section = document.getElementById(id);
+
+    if(section){
+
+        section.scrollIntoView({
+            behavior:"smooth"
+        });
+
+    }
+
+}
+
+
+/* Buttons */
+
+function openBirthday(){
+    goTo("birthday");
+}
+
+function openHeart(){
+    goTo("heart");
+}
+
+function openSecret(){
+    goTo("secret");
+}
+
+function openPickup(){
+    goTo("pickup");
+}
+
+function openFinal(){
+    goTo("final");
+}
+
+
+/* Secret message */
+
+function showSecret(){
+
+    var message =
+        document.getElementById("secretMessage");
+
+    message.classList.remove("hidden");
+
+    message.classList.add("show");
+
+}
+
+
+/* Pickup lines */
+
+var quotes = [
+
+`“Are you my birthday wish?<br>
+Because somehow, everything I could ask for
+already looks a lot like you.” ❤️`,
+
+`“People say the moon is beautiful...
+but they clearly haven't seen
+my Moti smiling.” 🌙❤️`,
+
+`“I was looking for something beautiful
+to write here...
+then I remembered I'm writing this for you.” 🥹❤️`,
+
+`“You're not just my Cutiee...
+you're my favourite thought
+that randomly appears throughout my day.” ❤️`
+
+];
+
+var quoteIndex = 0;
+
+function nextQuote(){
+
+    quoteIndex++;
+
+    if(quoteIndex >= quotes.length){
+        quoteIndex = 0;
+    }
+
+    document.getElementById("quote").innerHTML =
+        quotes[quoteIndex];
+
+    document.getElementById("quoteNumber").innerHTML =
+        quoteIndex + 1;
+
+}
+
+
+/* Floating hearts */
+
+function createHeart(){
+
+    var heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+        Math.random() > .5 ? "♥" : "♡";
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },8000);
+
+}
+
+setInterval(createHeart,800);
+
+
+/* Simple 3D tilt */
+
+var cards =
+    document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+    card.addEventListener("mousemove",function(event){
+
+        var rect =
+            card.getBoundingClientRect();
+
+        var x =
+            event.clientX - rect.left;
+
+        var y =
+            event.clientY - rect.top;
+
+        var rotateY =
+            ((x / rect.width) - .5) * 8;
+
+        var rotateX =
+            ((y / rect.height) - .5) * -8;
+
+        card.style.transform =
+            "perspective(800px) rotateX(" +
+            rotateX +
+            "deg) rotateY(" +
+            rotateY +
+            "deg)";
+
+    });
+
+    card.addEventListener("mouseleave",function(){
+
+        card.style.transform =
+            "perspective(800px) rotateX(0deg) rotateY(0deg)";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
